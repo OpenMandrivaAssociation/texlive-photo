@@ -1,3 +1,9 @@
+# revision 18739
+# category Package
+# catalog-ctan /macros/latex/contrib/photo
+# catalog-date 2006-12-02 15:26:11 +0100
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-photo
 Version:	20061202
 Release:	1
@@ -51,6 +57,7 @@ captions and photographer line still being available.
 %doc %{_texmfdistdir}/source/latex/photo/photo.drv
 %doc %{_texmfdistdir}/source/latex/photo/photo.dtx
 %doc %{_texmfdistdir}/source/latex/photo/photo.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -61,3 +68,5 @@ captions and photographer line still being available.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
