@@ -5,8 +5,8 @@
 # catalog-license lppl
 # catalog-version undef
 Name:		texlive-photo
-Version:	20061202
-Release:	10
+Version:	20170414
+Release:	1
 Summary:	A float environment for photographs
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/photo
